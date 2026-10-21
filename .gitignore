@@ -1,0 +1,42 @@
+# ===================================================================
+# PlaceTrack .gitignore
+# Excludes dependencies, build artifacts, environments, and IDE files
+# ===================================================================
+
+# Node & Frontend Build
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Java & Backend Build
+backend/target/
+backend/*.jar
+backend/*.war
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.secret
+*.pem
+credentials.json
+
+# IDE and Editor Files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+.DS_Store
+Thumbs.db
+
+# OS Temporary Files
+*.tmp
+*.bak
+*.log
